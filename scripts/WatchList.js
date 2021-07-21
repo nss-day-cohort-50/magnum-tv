@@ -1,4 +1,4 @@
-import { getShow, getWatchlist, getActors } from "./database.js"
+import { getShows, getWatchlist, getActors } from "./database.js"
 
 // Get copy of state for use in this module
 const shows = getShows()
