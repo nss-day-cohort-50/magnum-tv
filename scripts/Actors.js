@@ -9,7 +9,7 @@ export const Actors = () => {
         html += `<li id="actor--${actor.id}">${actor.name}</li>`
     }
 
-    html += "</ul>"
+    html += "</ul>" 
 
     return html
 }

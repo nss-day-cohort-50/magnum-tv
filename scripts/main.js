@@ -1,6 +1,6 @@
 import { Actors } from "./Actors.js"
 import { Shows } from "./Shows.js"
-import { WatchLists } from "./WatchList.js"
+import { WatchList } from "./WatchList.js"
 
 const mainContainer = document.querySelector("#container")
 
@@ -20,6 +20,7 @@ const applicationHTML = `
 <article class="details">
     <section class="watchlist">
         <h2>WatchList</h2>
+        ${WatchList()}
      </section>
 </article>
 `

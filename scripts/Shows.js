@@ -1,4 +1,4 @@
-import { getShows} from "./Actors.js"
+import { getShows} from "./database.js"
 
 const shows = getShows()
 
@@ -6,7 +6,7 @@ export const Shows = () => {
     let html = "<ul>"
 
     for (const show of shows) {
-        html += `<li id="show--${show.id}">${shows.name}</li>`
+        html += `<li id="show--${show.id}">${show.name}</li>`
     }
 
     html += "</ul>"
