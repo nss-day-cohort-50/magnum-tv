@@ -1,4 +1,4 @@
-import { getShows} from "./database.js"
+import { getShows } from "./database.js"
 
 const shows = getShows()
 
