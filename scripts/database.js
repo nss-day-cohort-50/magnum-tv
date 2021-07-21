@@ -91,7 +91,7 @@ const database = {
         {
             id: 6,
             name: "Gary Coleman",
-            showId: 2
+            showId: 4
         },
         {
             id: 7,
@@ -101,7 +101,7 @@ const database = {
         {
             id: 8,
             name: "Betty White",
-            showId: 10
+            showId: 3
         },
         {
             id: 9,
@@ -113,6 +113,11 @@ const database = {
             name: "Pam Dawber",
             showId: 10
         },
+        {
+            id: 11,
+            name: "Scott Bakula",
+            showId: 2
+        }
     ],
     watchlist: [
         {
