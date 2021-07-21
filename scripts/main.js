@@ -20,7 +20,7 @@ const applicationHTML = `
 <article class="details">
     <section class="watchlist">
         <h2>WatchList</h2>
-
+            ${WatchList()}
      </section>
 </article>
 `

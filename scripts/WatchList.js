@@ -38,7 +38,7 @@ export const WatchList = () => {
 
     for (const watched in watchList) {
         const actor = findActor(watched, actors)
-        const show = findShow(watched)
+        const show = findShow(watched, shows)
 
         html += `<li>${show.name} starring ${actor.name} was watched on ${new Date(watchList.date).toLocaleDateString()}</li>`
     }
