@@ -164,6 +164,8 @@ export const getShows = () => {
 export const getWatchlist = () => {
     return database.watchlist.map(watched => ({ ...watched }))
 }
+
 export const getShowTypes = () => {
     return database.showTypes.map(type => ({ ...type }))
 }
+

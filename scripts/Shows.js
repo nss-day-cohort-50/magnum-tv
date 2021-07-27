@@ -1,18 +1,8 @@
 import { getShows, getShowTypes } from "./database.js"
+import { findShowType } from "./utils.js"
 
 const shows = getShows()
 const showTypes = getShowTypes()
-
-
-const findShowType = (showObject, showTypesArray) => {
-    for (const type of showTypesArray) {
-        if (showObject.showTypeId === type.id) {
-            return type
-        }
-    }
-
-    return null
-}
 
 document.addEventListener(
     "click",

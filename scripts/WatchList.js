@@ -1,14 +1,16 @@
-import { getShows, getWatchlist, getActors } from "./database.js"
+import { getShows, getWatchlist, getActors, getShowTypes } from "./database.js"
+import { findShowType } from "./utils.js"
 
 // Get copy of state for use in this module
 const shows = getShows()
 const actors = getActors()
 const watchList = getWatchlist()
+const showTypes = getShowTypes()
 
 
 // Function whose responsibility is to find the product for an order
 const findShow = (watchedShow, showsArray) => {
-    let watchListShow = null 
+    let watchListShow = null
 
     for (const show of showsArray) {
         if (show.id === watchedShow.showId) {
@@ -39,9 +41,10 @@ export const WatchList = () => {
     for (const watched of watchList) {
         const actor = findActor(watched, actors)
         const show = findShow(watched, shows)
+        const showType = findShowType(show, showTypes)
 
         html += `
-            <li>${show.name} starring ${actor.name} was watched
+            <li>${show.name} (${showType.type}) starring ${actor.name} was watched
             on ${watched.date}</li>
         `
     }
